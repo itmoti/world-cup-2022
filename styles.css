@@ -1,0 +1,364 @@
+/* Common styles */
+
+body {
+    margin: 0;
+    font-family: 'Finlandica', sans-serif;
+    font-family: 'Gulzar', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.without-footer {
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+}
+ #active {
+    
+    background-color: red;
+    color : white;
+
+ }
+/* Header Sections */
+
+header {
+    background-color: #161616;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 60px;
+
+}
+
+.header-text {
+    color: white;
+    width: 50%;
+    padding: 40px;
+}
+
+.header-paragraph {
+    margin-bottom: 30px;
+}
+
+.header-button {
+    background-color: #DD0000;
+    color: white;
+    font-weight: 500;
+    padding: 16px 25px;
+    text-decoration: none;
+
+
+
+}
+
+.banner-image {
+    width: 50%;
+}
+
+/* Upcoming Match|All Goroup |Blog */
+
+.content {
+    display: flex;
+    margin-bottom: 40px;
+
+}
+
+.left-sidebar {
+    background-color: black;
+    min-width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.left-sidebar a {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: 70%;
+    margin: 8px auto;
+    padding: 10px 15px;
+
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+/* Navigation Content */
+.navigation-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 18px;
+    row-gap: 15px;
+    width: calc(100% - 200px);
+
+
+
+}
+
+.blog-match-details {
+
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+
+
+
+}
+
+.blog-image {
+
+    width: 100%;
+    height: 40%;
+}
+
+.blog-match-details a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: block;
+    width: 60px;
+    padding: 5px 5px;
+    font-weight: 500;
+}
+
+.blog-match-details-header {
+    font-size: 18px
+}
+
+.blog-match-details .footer {
+    padding: 2px;
+    width: 100px;
+
+}
+
+.match-details {
+    height: 150px;
+    width: 180px;
+    border: 1px solid #E8E8E8;
+}
+
+.match-detail {
+    margin: 8px 12px;
+
+}
+
+.team-name {
+    font-size: 20px;
+    text-align: center;
+}
+
+.match-time {
+    text-align: center;
+}
+
+.thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.thumbnail>img {
+    width: 40%;
+}
+
+/* Tab View Button */
+.tab-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.tab-button {
+    margin: 10px auto;
+    padding: 15px 10px;
+
+    display: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+
+}
+
+footer hr {
+    width: 80%;
+    border: 1px solid #FFFFFF;
+
+}
+
+.extra a {
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+    margin-left: 4px;
+}
+.social-accounts 
+{
+    margin-top: 20px;
+}
+
+.social-accounts  a {
+    font-size: 20px;
+    
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    
+}
+
+
+/* Media Query  */
+
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+
+     /* Upcoming Match|All Goroup |Blog */
+    .content {
+        flex-direction: column;
+    }
+
+    .left-sidebar {
+        flex-direction: row;
+        height: auto;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    .left-sidebar a {
+        margin: auto 5px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: auto;
+        text-align: center;
+    }
+
+    .navigation-content {
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+        row-gap: 15px;
+
+    }
+
+    .blog-match-details {
+        height: 240px;
+    }
+
+    .tab-button {
+        display: block
+    }
+
+    /* Footer  */
+
+    .footer {
+        height: auto;
+    }
+
+    .extra {
+        display: flex;
+        flex-wrap: wrap;
+        height: 50px;
+        width: 60%;
+
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    .extra a {
+        width: 60px;
+        margin-left: 40px;
+    }
+}
+
+@media  only screen and (min-width : 320px) and (max-width : 480px) {
+     
+    /* Header sectiion */
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .banner-image {
+        width: 100%;
+    }
+    .banner-image > img {
+        width: 100%;
+    }
+    .header-button {
+    padding: 16px 10px;
+    border-radius: 5px;
+        
+    }
+    /* Upcoming Match|All Goroup |Blog */
+    .content {
+        flex-direction: column;
+    }
+
+    .left-sidebar {
+        flex-direction: row;
+        height: auto;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    .left-sidebar a {
+        margin: auto 5px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: auto;
+        text-align: center;
+    }
+
+    .navigation-content {
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+        row-gap: 15px;
+
+    }
+
+    .blog-match-details {
+        height: 240px;
+    }
+   /* Footer  */
+   .footer {
+    height: auto;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    width: 60%;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.extra a {
+    width: 60px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+   
+}
