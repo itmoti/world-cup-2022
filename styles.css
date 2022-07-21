@@ -52,18 +52,28 @@ header {
 }
 
 .header-button {
-    background-color: #DD0000;
+   
     color: white;
     font-weight: 500;
-    padding: 16px 25px;
+    width: 60px;
     text-decoration: none;
-
-
-
+   
+  
 }
-.header-button:hover {
-    animation: move 1 ease-in 0 infinite  ;
-}
+
+.header-button-contain {
+    padding: 16px 26px;
+    width: 100px;
+    height: 20px;
+    background-color: #DD0000;
+      transition: width 2s;
+      z-index: 1;
+      position: relative;
+  }
+  
+  .header-button-contain:hover {
+    width: 200px;
+  }
 
 .banner-image {
     width: 50%;
