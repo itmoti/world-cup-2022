@@ -23,14 +23,7 @@ body {
     color: white;
 
 }
- @keyframes move {
-    from {
-    width: 30px;
-    }
-    to {
-        width: 100px;
-    }
- }
+
 /* Header Sections */
 
 header {
@@ -67,8 +60,7 @@ header {
     height: 20px;
     background-color: #DD0000;
       transition: width 2s;
-      z-index: 1;
-      position: relative;
+
   }
   
   .header-button-contain:hover {
